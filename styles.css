@@ -2,18 +2,29 @@ body, html {
   height: 100%;
   width: 100%;
   margin: 0;
+  font-family: 'Lato', sans-serif;
 }
 
- .custom.navbar-toggler {
-	border-color: white;
+
+.navbar.navbar-2 .navbar-toggler-icon {
+background-image: url('https://mdbootstrap.com/img/svg/hamburger2.svg?color=fff');
+font-size: 2em;
 }
 
- .custom .navbar-toggler-icon {
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 1.5em;
+	letter-spacing: 0.1em;
+	color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover{
+	font-size: 1.8em;
+	color: white;
 }
 
 /* CSS for Hero-image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/main.JPEG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/campus.PNG");
   height: 100%;
   background-position: center;
   background-attachment: fixed;
@@ -29,10 +40,10 @@ body, html {
 
 
 .hero-text {
-	animation: fadein 2s;
+  animation: fadein 2s;
   text-align: center;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -49,12 +60,8 @@ body, html {
 
 	border-radius: 50%;
 }
-.nav-link h3 {
 
-	color: white;
-	padding: 10px;
 
-}
 
 /* About-me picture in the 2nd section*/
 
@@ -64,6 +71,12 @@ body, html {
 }
 
 
+#w img {
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
 
 #s {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/desert.jpg");
@@ -72,20 +85,15 @@ body, html {
   background-size: cover;
   position: relative;
   color: white;
+  height: 100%;
+  padding: 5%;
 }
 
-#w {
-
-	background: url("media/campus.PNG") no-repeat center center fixed;
-	display: table;
-	position:relative;
-	background-size: cover;
-	padding-right: auto;
-	color: white;
-	height: 100%;
+#s p, #s h3 {
+	width: 100%;
+	padding: 20px;
+	margin: 0;
 }
-
-
 
 
 /* END of About-me picture in the 2nd section*/
@@ -105,9 +113,10 @@ body, html {
 	padding: 100px;
 }
 
-.in-row i{
+.in-row i , .in-row h2{
 	width: 100%;
 	text-align: center;
+	padding: 10px;
 }
 .in-row a{
 	width: 100%;
@@ -120,20 +129,24 @@ body, html {
 
 }
 
+.fa-instagram {
+	color: white;
+}
+
+.fa-facebook {
+	color: white;
+}
+
 /*End of 3rd Section*/
 
 
 /* This section is for  Extra large >= 1200px   */
 @media (min-width: 1200px) {
-	#s .row h3{
-	margin-top: 25%;
+
+#s {
+	padding: 10%;
 }
-#s .row p{
-	margin-top: 5%;
-}
-#s .row button{
-	margin-top: 5%;
-}
+
 
 }
 
@@ -141,13 +154,43 @@ body, html {
 /* This section is for Large >= 992px  && <=1199px  */
 @media (min-width: 992px) and (max-width: 1199px) {
 
-
+#s {
+	padding: 0;
+}
+#s h3{
+	margin: 0;
+	padding-bottom: 0: 
+}
+#s p {
+	padding-top: 0;
+}
 }
 
 
 
 /* This section is for Medium >= 768px  && <=991px  */
 @media (min-width: 768px) and (max-width: 991px) {
+
+/* About-me picture in the 2nd section*/
+	#s p {
+		font-size: 0.8em;
+	}
+	#s h3{
+		padding: 0 0 0 2%;
+		margin: 0;
+	}
+	#s p{
+		padding: 2%;
+		position: relative;
+	}
+	#s a{
+		position: absolute;
+		bottom: -26%;
+		left: 2%;
+		height: 35px;
+	}
+
+/* END of About-me picture in the 2nd section*/
 
 
 }
