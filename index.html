@@ -13,10 +13,10 @@
 
 <!-- Hero Image with navbar-->
 <div class="hero-image">
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent navbar-2">
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
   <a class="navbar-brand" href="index.html"><img src="media/Logo.png" width="200rem" height="100rem" alt="" loading="lazy"></a>
-  <button class="navbar-toggler custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<div class="animated-icon1"><span></span><span></span><span></span></div>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -76,7 +76,7 @@
 		<div class="col-12 col-md-4 ">
 			<div class="container p-3 box mb-3">
 				<div class="row in-row pb-2 text-center">
-					<i class="fa fa-film fa-5x"></i>
+					<a href="#Films"><i class="fa fa-film fa-5x"></i></a>
 					<h2>Films</h2>
 				</div>
 				<div class="row text-center">
@@ -87,8 +87,8 @@
 		<div class="col-12 col-md-4">
 			<div class="container p-3 box mb-3">
 				<div class="row in-row pb-2">
-					<i class="fa fa-camera fa-5x"></i>
-					<h2>Camera</h2>
+					<a href="#Photos"><i class="fa fa-photo fa-5x"></i></a>
+					<h2>Photos</h2>
 				</div>
 				<div class="row text-center">
 					<p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, </p>
@@ -111,13 +111,90 @@
 </div>
 <!-- End of 3rd Section -->
 
+
+
+<!--Start of 4th Section -->
+	<div id="Films" class="jumbotron">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+				<h2 class="text-center"> Films </h2>
+				<hr class="hr-line">
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+	  					<iframe src="https://www.youtube.com/embed/uRbKSPsLwEw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-12 col-md-6">
+					<div class="embed-responsive embed-responsive-16by9">
+	  					<iframe src="https://www.youtube.com/embed/i8uptlNuy-s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="col-12 text-center">
+					<a href="https://www.youtube.com/" class="btn btn-danger" target="_blank"><i class="fa fa-youtube"></i> For More</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- End of 4th Section -->
+
+<!-- Start of 5th Section -->
+	<div id="Photos" class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+				<h2 class="text-center"> Photos </h2>
+				<hr class="hr-line">
+			</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-6" >
+					<img src="media/squirrel.jpg" class="img-fluid p-1">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="media/daisy.jpg" class="img-fluid p-1">
+				</div>
+			</div>
+			<div class="p-2"></div>
+			<div class="row">
+				<div class="col-12 col-md-6">
+					<img src="media/compass.jpg" class="img-fluid p-1">
+				</div>
+				<div class="col-12 col-md-6">
+					<img src="media/africa.jpg" class="img-fluid p-1">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center pt-5">
+					<a href="https://pixabay.com/" class="btn btn-secondary" target="_blank"><i class="fa fa-photo"> For More </i></a>
+				</div>
+			</div>
+		</div>
+		</div>
+
+
+
+
+
+<!-- End of 5th Section -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script type="text/javascript">
-	$("#navbar-toggler-icon").click( function(){
-		$(".navbar").css("background-color","black !important");
-	});
+		$(document).ready(function () {
+
+		  $('.first-button').on('click', function () {
+
+		    $('.animated-icon1').toggleClass('open');
+
+		  });
+
+		});
 </script>
 </body>
 </html>
