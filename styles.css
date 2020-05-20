@@ -11,6 +11,13 @@ body, html {
     padding: 1rem 1rem;
 }
 
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 
 .animated-icon1{
 width: 30px;
@@ -86,14 +93,7 @@ transform: rotate(-135deg);
 }
 
 
-
-
-
-
 /* End of Hamburger Icon Animation*/
-.nav-link{
-	z-index: 99999;
-}
 
 .navbar-dark .navbar-nav .nav-link {
 	font-size: 1.5em;
@@ -273,18 +273,110 @@ height: 100%;
 object-fit: cover;
 
 }
-
-
-
-
 /* End of 5th Section*/
+
+
+/* 6th Section */
+
+#WebDesign {
+
+	background: no-repeat center center fixed;
+	display: table;
+	position:relative;
+	background-size: cover;
+	padding-right: auto;
+	color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("media/internet.jpg");   
+}
+
+#WebDesign img{
+
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+/* End of 6th Section */
+
+
+/* 7th Section */
+
+#Contact {
+
+	background: no-repeat center center fixed;
+	display: table;
+	position:relative;
+	background-size: cover;
+	padding-right: auto;
+	color: white;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("media/desk.jpg");   
+}
+
+#Contact small{
+	color: #FFCDD2;
+}
+
+#Contact hr {
+    border-top: 2px solid white;
+}
+
+/* End of 7th Section */
+
+
+/* 8th Section*/
+
+#BackToTop {
+	padding: 3%;
+	background: black;
+	opacity: 0.8;
+}
+
+#BackToTop h4{
+	color: white;
+}
+
+#BackToTop a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+}
+#BackToTop a:hover{
+	font-size: 1.7em;
+}
+
+/* End of 8th Section */
+
+/* Footer section*/
+
+footer {
+	padding: 1%;
+	background: black;
+	color: white;
+}
+
+footer .fa:hover {
+
+	font-size: 3.3em;
+
+}
+
+/*End of Footer Section*/
 
 
 /* This section is for  Extra large >= 1200px   */
 @media (min-width: 1200px) {
 
 #s {
-	padding: 10%;
+	padding: 5%;
+}
+
+#WebDesign img{
+
+	height: 225px;
+	object-fit: scale-down;
+
+
 }
 
 
@@ -337,6 +429,18 @@ object-fit: cover;
 	}
 
 /* END of About-me picture in the 2nd section*/
+
+/* 6th Section */
+
+
+.image-pad {
+
+	padding: 20%;
+
+}
+
+/* End of 6th Section */
+
 
 
 }
