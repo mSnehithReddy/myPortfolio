@@ -5,6 +5,7 @@ body, html {
   font-family: 'Lato', sans-serif;
 }
 
+/*------------------------------- CSS  For Home Page    ------------------------- */
 
 /* Hamburger Icon Animation*/
 .navbar-toggler {
@@ -158,7 +159,7 @@ transform: rotate(-135deg);
 
 #w img {
 
-	max-width: 100%;
+	width: 100%;
 	max-height: 100%;
 }
 
@@ -211,6 +212,7 @@ transform: rotate(-135deg);
 .box {
 	border: 1px solid white;
 	border-radius: 15px;
+	height: 100%;
 
 }
 
@@ -347,6 +349,100 @@ object-fit: cover;
 
 /* End of 8th Section */
 
+
+/*------------------------------- End of CSS  For Home Page    ------------------------- */
+
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
+
+/* Header Section */
+#resume-header {
+
+	background: #607d8b;
+
+
+}
+/* End of Header Section */
+
+
+/* 1st Caption Section */
+
+#res-caption {
+
+	background-color: yellow;
+	height: 88%;
+	display: table;
+	width: 100%;
+
+}
+
+#res-caption p{
+	animation: fadein 2s;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 900%;
+}
+
+/* 1st End of Section */
+
+/* 2nd- Objective Section*/
+
+#res-obj .jumbotron{
+	background:#ffebee;
+}
+
+.jumbotron h3 {
+	text-transform: uppercase;
+}
+
+.left-border {
+	border-left: 2px solid black;
+}
+
+.fa-quote-left {
+	color: #ff1744;
+}
+
+.hr-black {
+
+	width: 80px;
+    border-top: 2px solid black;
+    padding-bottom: 2%;
+
+}
+
+#res-obj p {
+	margin-left: 50px;
+}
+
+/* 2nd- End of Objective Section*/
+
+
+/* 3rd- Education Section*/
+
+#res-edu .jumbotron{
+	background: #bbdefb;
+}
+
+
+/* 3rd- End of Education Section*/
+
+/*4th Certifications Section*/
+
+#res-certificate .jumbotron{
+
+	background: #fff3e0;
+
+}
+
+/*4th End of Certifications Section*/
+
+
+/*------------------------------- End of CSS  For Resume Page    ------------------------- */
+
+
+
 /* Footer section*/
 
 footer {
@@ -365,11 +461,33 @@ footer .fa:hover {
 
 
 /* This section is for  Extra large >= 1200px   */
+@media (min-width: 1642px) {
+
+#s p {
+
+	font-size: 1.5em;
+}
+
+
+}
+
 @media (min-width: 1200px) {
 
 #s {
-	padding: 5%;
+	padding: 5%; 
 }
+
+#s .row {
+
+	margin-top: 8%;
+
+}
+
+#w img {
+	height: 100%;
+}
+
+
 
 #WebDesign img{
 
@@ -377,6 +495,11 @@ footer .fa:hover {
 	object-fit: scale-down;
 
 
+}
+
+#WebDesign .col {
+
+	padding: 15px;
 }
 
 
@@ -396,6 +519,19 @@ footer .fa:hover {
 #s p {
 	padding-top: 0;
 }
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
+
+/* 1st- Caption Section*/
+#res-caption {
+
+	height: 92%;
+
+}
+/*1st- End of Caption Section*/
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
+
 }
 
 
@@ -407,6 +543,7 @@ footer .fa:hover {
 	.navbar-dark .navbar-nav .nav-link {
 	background-color: black; 
 }
+
 /*End of Hamburger click CSS*/
 
 /* About-me picture in the 2nd section*/
@@ -441,7 +578,15 @@ footer .fa:hover {
 
 /* End of 6th Section */
 
+/*------------------------------- CSS  For Resume Page    ------------------------- */
 
+/* CSS for Links in navbar */
+#resume-header	.navbar-dark .navbar-nav .nav-link {
+	background-color: #607d8b; 
+}
+/* End of CSS for Links in navbar*/
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
 
 }
 
@@ -455,6 +600,7 @@ footer .fa:hover {
 	.navbar-dark .navbar-nav .nav-link {
 	background-color: black; 
 }
+
 /*End of Hamburger click CSS*/
 
 .navbar .navbar-brand img {
@@ -471,6 +617,27 @@ footer .fa:hover {
   font-size: large;
 }
 
+/*------------------------------- CSS  For Resume Page    ------------------------- */
+
+/* CSS for Links in navbar */
+#resume-header	.navbar-dark .navbar-nav .nav-link {
+	background-color: #607d8b; 
+}
+/* End of CSS for Links in navbar*/
+
+
+/* Caption Font size*/
+
+#res-caption p{
+
+	font-size: 600%;
+}
+
+/* End of Caption Font Size*/
+
+
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
 
 }
 
@@ -482,6 +649,7 @@ footer .fa:hover {
 	.navbar-dark .navbar-nav .nav-link {
 	background-color: black; 
 }
+
 /*End of Hamburger click CSS*/
 
 .navbar .navbar-brand img {
@@ -498,5 +666,35 @@ footer .fa:hover {
   font-size: large;
 }
 
+
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
+
+/* CSS for Links in navbar */
+#resume-header	.navbar-dark .navbar-nav .nav-link {
+	background-color: #607d8b; 
+}
+/* End of CSS for Links in navbar*/
+
+/* Caption Font size*/
+
+#res-caption p{
+
+	font-size: 550%;
+}
+
+/* End of Caption Font Size*/
+
+
+
+/* Education Section */
+
+#res-edu span {
+	margin-left: 47px;
+}
+
+/* End of Education Section*/
+
+/*------------------------------- CSS  For Resume Page    ------------------------- */
 
 }
