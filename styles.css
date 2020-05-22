@@ -439,6 +439,25 @@ object-fit: cover;
 /*4th End of Certifications Section*/
 
 
+/* 5th Skills Section*/
+
+#res-skills .jumbotron {
+	background: #b0bec5;
+}
+
+#res-skills p {
+	font-size: 1.1em;
+
+}
+
+.badge {
+	text-transform: uppercase;
+}
+
+
+/* 5th End of Skills Section*/
+
+
 /*------------------------------- End of CSS  For Resume Page    ------------------------- */
 
 
