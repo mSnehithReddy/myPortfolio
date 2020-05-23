@@ -110,7 +110,7 @@ transform: rotate(-135deg);
 
 /* CSS for Hero-image */
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/campus.PNG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/campus.png");
   height: 89%;
   background-position: center;
   background-attachment: fixed;
