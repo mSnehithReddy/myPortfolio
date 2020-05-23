@@ -93,6 +93,8 @@ h3bounce("#res-obj h3");
 h3bounce("#res-edu h3");
 h3bounce("#res-certificate h3");
 h3bounce("#res-skills h3");
+h3bounce("#res-projects h3");
+h3bounce("#res-achievements h3");
 
 
 /* End JS for On Scroll Animation for Headings*/
@@ -159,6 +161,40 @@ $("#res-skills #skill-1").waypoint( function(direction) {
 
 
 /* 5th End of Skills Section  JS  for Progress Bar*/
+
+/* 6th Projects Section */
+
+function popup(element_id) {
+
+
+	$(element_id).click( function(){
+
+		$("#alert-project").html('<div class="alert alert-warning alert-dismissible fade show" role="alert">' +
+			  '<p class="m-0"> Really Appreciate your Concern but I still did not add it in my GitHub. Will Add it Soon! </p>' +
+			  '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
+			    + '<span aria-hidden="true">&times;</span>' +
+			  '</button>' +
+			'</div>');
+				$("#alert-contact").html('<div class="alert alert-warning alert-dismissible fade show" role="alert">' +
+			  '<p class="m-0"> Really Appreciate your Concern but this feature is currently unavailable. Will Add it Soon!(If you are really interested mail me at m.snehithreddy000@gmail.com) </p>' +
+			  '<button type="button" class="close" data-dismiss="alert" aria-label="Close">'
+			    + '<span aria-hidden="true">&times;</span>' +
+			  '</button>' +
+			'</div>');
+
+	});
+
+
+}
+
+popup("#project-2");
+popup("#project-3");
+popup("#submit");
+
+
+
+/* 6th End of Project Section*/
+
 
 
 

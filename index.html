@@ -4,6 +4,7 @@
 	<title>My Website</title>
 	<meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="media/tab_logo.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
@@ -12,9 +13,11 @@
 </head>
 <body>
 
-<!-- Hero Image with navbar-->
-<div class="hero-image">
-<nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+
+
+<!-- Heager Section of Resume Page -->
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark ">
   <a class="navbar-brand" href="index.html"><img src="media/Logo.png" width="200rem" height="100rem" alt="" loading="lazy"></a>
   <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	<div class="animated-icon1"><span></span><span></span><span></span></div>
@@ -25,6 +28,9 @@
       <li class="nav-item ">
         <a class="nav-link text-center" href="index.html"> HOME </a>
       </li>
+      <li class="nav-item ">
+        <a class="nav-link text-center" href="resume.html"> RESUME </a>
+      </li>
       <li class="nav-item">
         <a class="nav-link text-center" href="#s"> ABOUT </a>
       </li>
@@ -34,6 +40,17 @@
     </ul>
   </div>
 </nav>
+</header> <!-- End of Header Section  -->
+
+
+
+
+
+
+
+
+<!-- Hero Image with navbar-->
+<div class="hero-image">
 		<div class="hero-text">
 			<h1 class="font-weight-bold">Hello, I'm Snehith Reddy</h1>
 			<h1 class="font-weight-bold">#JCian</h1>
@@ -60,7 +77,7 @@
 				<p class="text-justify"> 
 					A 20-year old boy who is fueled by a passion for coding, who is obsessed with the idea of using software to solve practical problems, who believes in the power of programming to transform and improve the lives of people around the world, who tries his best to make his dreams into a reality, who constantly thrives well for a being the best out of the best and who definitely needs a JOB.
 				</p>
-				<a href="resume.html" class="btn btn-warning ml-3 ">See Portfolio</a>
+				<a href="resume.html" class="btn btn-warning ml-3 ">See Resume</a>
 			</div>
 			</div>
 			</div>
@@ -283,6 +300,9 @@
 				<hr class="hr-line">
 			</div>
 		</div>
+		<div id="alert-contact">
+			
+		</div>
 		<div class="row mb-4">
 			<div class="col-12 col-md-6">
 				<form>
@@ -303,7 +323,7 @@
 				    <label for="exampleFormControlTextarea1">Your Message</label>
 				    <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
 				  </div>
-				  <button type="submit" class="btn btn-primary">Submit</button>
+				  <a id="submit" type="submit" class="btn btn-primary" href="#Contact">Submit</a>
 				</form>
 			</div>
 			<div class="col-12 col-md-6 mt-5">
